@@ -1,0 +1,88 @@
+name: flutter_attendance_system
+description: A hybrid Bluetooth-based student attendance system with anti-proxy features.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+  flutter: ">=3.16.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.15.3
+  cloud_firestore: ^4.13.6
+  firebase_messaging: ^14.7.10
+
+  # Bluetooth
+  flutter_blue_plus: ^1.12.13
+  permission_handler: ^11.1.0
+
+  # Location & Device Info
+  geolocator: ^10.1.0
+  device_info_plus: ^9.1.1
+  wifi_info_flutter: ^2.0.2
+
+  # Crypto & Security
+  crypto: ^3.0.3
+  dart_jsonwebtoken: ^2.12.2
+  local_auth: ^2.1.7
+
+  # ML Kit for Face Detection (Optional)
+  google_mlkit_face_detection: ^0.10.0
+  camera: ^0.10.5+5
+
+  # UI & State Management
+  flutter_riverpod: ^2.4.9
+  go_router: ^12.1.3
+  flutter_svg: ^2.0.9
+  lottie: ^2.7.0
+
+  # HTTP & Networking
+  http: ^1.1.2
+  dio: ^5.4.0
+
+  # Storage & Preferences
+  shared_preferences: ^2.2.2
+  secure_storage: ^3.3.5
+
+  # Utils
+  intl: ^0.19.0
+  uuid: ^4.2.1
+  logger: ^2.0.2+1
+  package_info_plus: ^4.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.1
+  build_runner: ^2.4.7
+  json_annotation: ^4.8.1
+  json_serializable: ^6.7.1
+  freezed: ^2.4.6
+  riverpod_generator: ^2.3.9
+  mockito: ^5.4.4
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/animations/
+    - assets/icons/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
